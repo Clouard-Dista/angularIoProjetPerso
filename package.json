@@ -2,9 +2,9 @@
   "name": "angularioprojetperso",
   "version": "1.0.0",
   "description": "projet perso dans le cours d'angular",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/Clouard-Dista/angularIoProjetPerso/issues"
   },
-  "homepage": "https://github.com/Clouard-Dista/angularIoProjetPerso#readme"
+  "homepage": "https://github.com/Clouard-Dista/angularIoProjetPerso#readme",
+  "dependencies": {
+    "typescript": "3.4.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2"
+  }
 }
