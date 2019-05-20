@@ -4,7 +4,9 @@
   "description": "projet perso dans le cours d'angular",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "T": "jest",
+    "I": "npm install",
+    "Start": "node src/index"
   },
   "repository": {
     "type": "git",

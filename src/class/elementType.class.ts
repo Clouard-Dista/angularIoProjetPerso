@@ -1,4 +1,4 @@
-export class ElmentType {
+export class ElementType {
 	_id :number;
     _name :string;
     _resistance :number[];
