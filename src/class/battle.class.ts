@@ -9,6 +9,6 @@ export class Battle {
         this._Pokemon2 = pokemon2;
     }
     first (){
-        return this._Pokemon1._speed>this._Pokemon2._speed ? this._Pokemon1._speed : this._Pokemon2._speed;
+        return this._Pokemon1._speed>this._Pokemon2._speed ? this._Pokemon1 : this._Pokemon2;
     }
 }
