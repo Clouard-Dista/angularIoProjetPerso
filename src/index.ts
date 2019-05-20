@@ -7,3 +7,4 @@ const p2 = new Pokemon("P2",Type.Ice,7);
 console.log(p1.name)
 
 const  b1 = new Battle(p1,p2);
+b1.first();
