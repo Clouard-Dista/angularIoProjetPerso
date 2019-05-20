@@ -1,0 +1,19 @@
+{
+  "name": "angularioprojetperso",
+  "version": "1.0.0",
+  "description": "projet perso dans le cours d'angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clouard-Dista/angularIoProjetPerso.git"
+  },
+  "author": "talloir vincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clouard-Dista/angularIoProjetPerso/issues"
+  },
+  "homepage": "https://github.com/Clouard-Dista/angularIoProjetPerso#readme"
+}
