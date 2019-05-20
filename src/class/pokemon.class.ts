@@ -7,7 +7,6 @@ export class Pokemon {
     _speed :number;
     _hpMax :number;
     _hp :number;
-    _KO :boolean;
     _attack :Attack;
 
 	constructor(name:string, type :ElementType, speed :number,pv :number,attack? :Attack) {
@@ -17,8 +16,7 @@ export class Pokemon {
         this._speed = speed;
         this._hp = pv;
         this._hpMax = pv;
-        this._KO = false;
-        this._attack = attack || new Attack("Charge",new ElementType(9, "normal",[1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1]),100,10);
+        this._attack = attack || new Attack("Charge",new ElementType(9, "normal",[1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1]),100,-10);
 	}
 	KO(){
 	    return this._hp == 0;

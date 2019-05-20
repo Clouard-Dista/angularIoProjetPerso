@@ -18,6 +18,10 @@ export class Attack {
 	    const rand = 100*Math.random();
 	    if(rand <= this._accuracy){
 	        cible.pv(this._power);
+            console.log("et fait "+this._power+" de dommage");
+	    }else{
+            console.log("et rate son attaque");
 	    }
+            console.log("avec "+this._name);
 	}
 }

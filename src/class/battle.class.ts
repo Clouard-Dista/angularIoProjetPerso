@@ -18,17 +18,17 @@ export class Battle {
         return this._Pokemon1.KO()||this._Pokemon2.KO()
     }
     win(){
-        if(this.finish()){
-            return this._Pokemon1.KO() ? this._Pokemon2 : this._Pokemon1
-        }
-        return null
+        console.log((this._Pokemon1.KO() ? this._Pokemon2 : this._Pokemon1)._name+" a gagne")
+        return this._Pokemon1.KO() ? this._Pokemon2 : this._Pokemon1
     }
     start(){
         const first = this.first();
-        const second = this.first();
+        const second = this.second();
         while(this.finish()!= true){
+            console.log(first._name+" attaque")
             first._attack.play(second);
             if(!second.KO()){
+                console.log(second._name+" attaque")
                 second._attack.play(first);
             }
         }

@@ -11,3 +11,6 @@ test('pokemon type', () => {
 test('pokemon speed', () => {
   expect(new Pokemon("P1",type.dragon,10,100)._speed).toBe(10);
 });
+test('pokemon ko', () => {
+  expect(new Pokemon("P1",type.dragon,10,0).KO()).toBe(true);
+});
