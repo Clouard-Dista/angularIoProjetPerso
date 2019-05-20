@@ -1,20 +1,23 @@
 import {Pokemon} from "./pokemon.class";
-import {Type} from "./type.enum";
+import {ElementType} from "./elementType.class";
 
 export class Attack {
     _name :string;
     _accuracy :number;
     _power :number;
-    _type :Type;
+    _type :ElementType;
 
-	constructor(name:string, type :Type, accuracy :number, power :number) {
+	constructor(name:string, type :ElementType, accuracy :number, power :number) {
         this._name = name;
-        this._accuracy = type;
-        this._power = accuracy;
-        this._type = power;
+        this._accuracy = accuracy;
+        this._power = power;
+        this._type = type;
 	}
 
 	play(cible: Pokemon){
-	    cible.pv(this._power);
+	    const rand = 100*Math.random();
+	    if(rand <= this._accuracy){
+	        cible.pv(this._power);
+	    }
 	}
 }
